@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: Travel Management System
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/travel_management_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 10
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: UTC
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    root: INFO
+    com.travelmanagement: DEBUG
+
+springdoc:
+  swagger-ui:
+    doc-expansion: list
+    operations-sorter: method
+    tags-sorter: alpha
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs

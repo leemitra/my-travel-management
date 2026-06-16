@@ -1,0 +1,62 @@
+# Java/Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.backup
+release.properties
+dependency-reduced-pom.xml
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+*.code-workspace
+.DS_Store
+.classpath
+.project
+.settings/
+*.swp
+*.swo
+*~
+
+# Build
+build/
+.gradle/
+*.gradle
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Database
+*.db
+*.sqlite
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Spring Boot
+spring-boot-devtools.properties
+
+# Node (if using frontend tools)
+node_modules/
+npm-debug.log
+dist/
+setup.bat
+setup.sh
